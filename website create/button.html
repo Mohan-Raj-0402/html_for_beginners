@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animated Button</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learning button tags in HTML with examples"
+    />
+    <meta name="Author" content="Mohan_Raj" />
+    <!---meta http-equiv="refresh" content="12"--->
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="refresh"
+      content="05"
+      ;url="C:\Users\MMM\Videos\website create\button.html"
+    />
+
+    <style>
+      body {
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      button {
+        background-color: black;
+        color: rgb(0, 255, 0);
+        border-radius: 12px;
+        padding: 15px 40px;
+        border: 2px solid rgb(0, 255, 0);
+        cursor: pointer;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        /* Glow Effect */
+        box-shadow: 0 0 15px rgb(0, 255, 0), 0 0 30px rgba(0, 255, 0, 0.6);
+
+        /* Smooth transition */
+        transition: all 0.3s ease-in-out;
+
+        /* Pulse Animation */
+        animation: pulse 1.5s infinite;
+      }
+
+      /* Hover Animation */
+      button:hover {
+        background-color: rgb(0, 255, 0);
+        color: black;
+        transform: scale(1.1);
+        box-shadow: 0 0 25px rgb(0, 255, 0), 0 0 50px rgba(0, 255, 0, 0.8);
+      }
+
+      /* Pulse Keyframes */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 10px rgb(0, 255, 0);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 0 30px rgb(0, 255, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 10px rgb(0, 255, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="meta.html" target="_blank">
+      <button>Click Me</button>
+    </a>
+  </body>
+</html>
